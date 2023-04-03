@@ -8,10 +8,12 @@
 import UIKit
 import FirebaseCore
 import FirebaseAuth
+import FirebaseFirestore
 
 class RegisterViewController: UIViewController {
     
     var userBirthday: Date?
+    let db = Firestore.firestore()
     
     // MARK: - @IBOutlets
     @IBOutlet weak var registerButton: UIButton!
@@ -46,6 +48,24 @@ extension RegisterViewController {
         Auth.auth().createUser(withEmail: email!, password: password!) { authResult, error in
             if error != nil {
                 print("Error registering user: \(String(describing: error))")
+            } else {
+                self.addUser(id: (authResult?.user.uid)! ,firstName: self.firstNameField.text!, lastName: self.lastNameField.text!, email: email!, birthday: self.userBirthday!)
+            }
+        }
+    }
+    
+    // Adds user to Firestore database
+    func addUser(id: String, firstName: String, lastName: String, email: String, birthday: Date) {
+        let data: [String: Any] = [
+            "user_id": id,
+            "first_name": firstName,
+            "last_name": lastName,
+            "email": email,
+            "birthday": Int(birthday.timeIntervalSince1970)
+        ]
+        db.collection("users").addDocument(data: data) { error in
+            if let error = error {
+                print("Error adding document: \(error)")
             }
         }
     }

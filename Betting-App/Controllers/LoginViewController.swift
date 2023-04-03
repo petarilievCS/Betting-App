@@ -26,7 +26,9 @@ class LoginViewController: UIViewController {
     
     // MARK: - @IBActions
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        
+        if validFields() {
+            loginUser()
+        }
     }
     
 }
@@ -39,8 +41,26 @@ extension LoginViewController {
         let password: String? = passwordField.text
         Auth.auth().signIn(withEmail: email!, password: password!) { authResult, error in
             if error != nil {
+                self.emailField.text = ""
+                self.emailField.placeholder = "Invalid email or password"
+                self.passwordField.text = ""
+                self.passwordField.placeholder = "Invalid email or password"
                 print("Error while logging in user: \(String(describing: error))")
             }
         }
+    }
+    
+    // Validates email and password fields
+    func validFields() -> Bool {
+        var valid: Bool = true
+        if emailField.text == "" {
+            emailField.placeholder = "Enter your email"
+            valid = false
+        }
+        if passwordField.text == "" {
+            passwordField.placeholder = "Enter your password"
+            valid = false
+        }
+        return valid
     }
 }
