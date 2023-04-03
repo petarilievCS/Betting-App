@@ -15,7 +15,8 @@ struct K {
     
     struct Segues {
         static let welcomeToLogin: String = "welcomeToLogin"
-        static let welcomeToRegister: String = "welcomeToRegister"
+        static let welcomeToBirthday: String = "welcomeToBirthday"
+        static let birthdayToRegister: String = "birthdayToRegister"
     }
 }
 

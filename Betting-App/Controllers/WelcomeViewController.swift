@@ -30,7 +30,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: K.Segues.welcomeToRegister, sender: self)
+        performSegue(withIdentifier: K.Segues.welcomeToBirthday, sender: self)
     }
     
     @IBAction func guestButtonPressed(_ sender: UIButton) {

@@ -103,12 +103,12 @@
                         <outlet property="logoView" destination="WAB-9s-Wlv" id="BAY-qY-6jy"/>
                         <outlet property="registerButton" destination="i6a-Tr-TR9" id="5Uo-Y6-4QP"/>
                         <segue destination="dB6-je-8aQ" kind="show" identifier="welcomeToLogin" id="6SX-Hk-98L"/>
-                        <segue destination="oc4-GS-wOX" kind="show" identifier="welcomeToRegister" id="6w4-My-8Nh"/>
+                        <segue destination="zF1-ze-4P7" kind="show" identifier="welcomeToBirthday" id="fQT-SZ-vNp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910.6870229007632" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1805" y="-2"/>
         </scene>
         <!--Login-->
         <scene sceneID="GBF-Pa-JL5">
@@ -266,6 +266,7 @@
                                         <connections>
                                             <action selector="guestButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPR-um-OqY"/>
                                             <action selector="loginButtonPressed:" destination="dB6-je-8aQ" eventType="touchUpInside" id="zZF-2c-Xmo"/>
+                                            <action selector="registerButtonPressed:" destination="oc4-GS-wOX" eventType="touchUpInside" id="GDO-Ar-MZ0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -296,12 +297,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="Q5Z-sg-gMm"/>
                     <connections>
+                        <outlet property="confirmPasswordField" destination="6Uf-75-TeS" id="hKQ-pS-KE4"/>
+                        <outlet property="emailField" destination="geX-jf-V5t" id="fF6-Qx-qoI"/>
+                        <outlet property="firstNameField" destination="cNN-7K-tep" id="sMq-QO-NGK"/>
+                        <outlet property="lastNameField" destination="vs2-XS-xBp" id="ZMG-OL-eaA"/>
+                        <outlet property="passwordField" destination="KFa-XH-V8U" id="DPE-W8-xou"/>
                         <outlet property="registerButton" destination="Zt7-Ok-bVX" id="Ywh-ar-baJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnB-Lg-YDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2663" y="739"/>
+            <point key="canvasLocation" x="3505" y="725"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kMk-6l-GXu">
@@ -321,6 +327,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvg-rQ-XkC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="983.96946564885491" y="-2.1126760563380285"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="VTL-HE-or8">
+            <objects>
+                <viewController id="zF1-ze-4P7" customClass="BirthdayController" customModule="Betting_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FAO-cP-Tlz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hYJ-aY-6Hs">
+                                <rect key="frame" x="-55" y="78" width="503" height="696"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="kDA-hf-HFp">
+                                        <rect key="frame" x="0.0" y="0.0" width="503" height="328"/>
+                                        <color key="tintColor" name="Flat Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="503" id="o4f-ZD-7Od"/>
+                                            <constraint firstAttribute="height" constant="328" id="viM-ns-6Ob"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="b2t-bF-CAJ">
+                                        <rect key="frame" x="90" y="338" width="323" height="358"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When is your birthday?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHm-M1-Jg3">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="RPu-3W-iSG">
+                                                <rect key="frame" x="0.0" y="56" width="323" height="216"/>
+                                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                                    <!--2037-12-31 11:00:00 +0000-->
+                                                </date>
+                                            </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-uy-pIQ">
+                                                <rect key="frame" x="0.0" y="298" width="323" height="60"/>
+                                                <color key="backgroundColor" name="Flat Orange"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="kkt-cu-lXS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Continue">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="continueButtonPressed:" destination="zF1-ze-4P7" eventType="touchUpInside" id="1mb-ia-eXI"/>
+                                                    <action selector="guestButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtR-4e-kah"/>
+                                                    <action selector="loginButtonPressed:" destination="dB6-je-8aQ" eventType="touchUpInside" id="5qm-3E-hq6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="b2t-bF-CAJ" secondAttribute="trailing" constant="90" id="jkb-1B-DRo"/>
+                                    <constraint firstItem="b2t-bF-CAJ" firstAttribute="leading" secondItem="hYJ-aY-6Hs" secondAttribute="leading" constant="90" id="xSO-w2-07e"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pDk-71-eNS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hYJ-aY-6Hs" firstAttribute="centerX" secondItem="FAO-cP-Tlz" secondAttribute="centerX" id="E19-1m-5cL"/>
+                            <constraint firstItem="hYJ-aY-6Hs" firstAttribute="centerY" secondItem="FAO-cP-Tlz" secondAttribute="centerY" id="Oqu-Ox-gWm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Register" id="a3C-tf-HQA"/>
+                    <connections>
+                        <outlet property="birthdayLabel" destination="UHm-M1-Jg3" id="83h-fZ-zy0"/>
+                        <outlet property="continueButton" destination="uxd-uy-pIQ" id="zrj-dB-ZfB"/>
+                        <outlet property="datePicker" destination="RPu-3W-iSG" id="GbO-7b-k8i"/>
+                        <outlet property="logoView" destination="kDA-hf-HFp" id="Nhg-AB-JIV"/>
+                        <segue destination="oc4-GS-wOX" kind="show" identifier="birthdayToRegister" id="vtm-ZS-BAD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OmI-Rv-7Fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2661.8320610687024" y="724.64788732394368"/>
         </scene>
     </scenes>
     <resources>
