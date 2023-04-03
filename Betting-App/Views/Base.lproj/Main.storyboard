@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b13-cg-VlL">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Betting_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="k2w-aW-8fJ">
+                                <rect key="frame" x="-55" y="106.66666666666669" width="503" height="639"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="WAB-9s-Wlv">
+                                        <rect key="frame" x="0.0" y="0.0" width="503" height="328"/>
+                                        <color key="tintColor" name="Flat Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="328" id="glN-op-j2k"/>
+                                            <constraint firstAttribute="width" constant="503" id="v1p-TJ-Xpz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="8pg-JA-LeN">
+                                        <rect key="frame" x="90" y="407" width="323" height="232"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2W-Vk-6YO">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="60"/>
+                                                <color key="backgroundColor" name="Flat Orange"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="SZB-qP-GXz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LH4-Nt-zbM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6a-Tr-TR9">
+                                                <rect key="frame" x="0.0" y="86" width="323" height="60"/>
+                                                <color key="backgroundColor" name="Flat Orange"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="NWf-Z0-Fxa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Register">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="registerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpP-ti-nGC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JmJ-qv-ORa">
+                                                <rect key="frame" x="0.0" y="172" width="323" height="60"/>
+                                                <color key="backgroundColor" name="Flat Orange"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="BcZ-UE-iN4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Guest">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="guestButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFo-sm-4I4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8pg-JA-LeN" firstAttribute="leading" secondItem="k2w-aW-8fJ" secondAttribute="leading" constant="90" id="P8A-5z-gev"/>
+                                    <constraint firstAttribute="trailing" secondItem="8pg-JA-LeN" secondAttribute="trailing" constant="90" id="YQw-e4-068"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k2w-aW-8fJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JOZ-Ko-glS"/>
+                            <constraint firstItem="k2w-aW-8fJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v4h-Tr-9u5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YPT-fz-7tB"/>
+                    <connections>
+                        <outlet property="guestButton" destination="JmJ-qv-ORa" id="BEk-sP-SOq"/>
+                        <outlet property="loginButton" destination="w2W-Vk-6YO" id="FkP-HO-M5r"/>
+                        <outlet property="logoView" destination="WAB-9s-Wlv" id="BAY-qY-6jy"/>
+                        <outlet property="registerButton" destination="i6a-Tr-TR9" id="5Uo-Y6-4QP"/>
+                        <segue destination="dB6-je-8aQ" kind="show" identifier="welcomeToLogin" id="6SX-Hk-98L"/>
+                        <segue destination="oc4-GS-wOX" kind="show" identifier="welcomeToRegister" id="6w4-My-8Nh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1910.6870229007632" y="-2.1126760563380285"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="GBF-Pa-JL5">
+            <objects>
+                <viewController title="Login" id="dB6-je-8aQ" customClass="LoginViewController" customModule="Betting_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M4d-YF-S4D">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tbl-mo-ZCY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="xnY-QL-bg0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiM-2n-czu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663.3587786259541" y="-2.1126760563380285"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="KR6-ag-Spk">
+            <objects>
+                <viewController title="Register" id="oc4-GS-wOX" customClass="RegisterViewController" customModule="Betting_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qpW-yp-icK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="c1l-up-IDV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Register" id="Q5Z-sg-gMm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NnB-Lg-YDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663" y="739"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kMk-6l-GXu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b13-cg-VlL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="gn5-YR-pkk">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="Flat Orange"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bn3-r4-1wd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvg-rQ-XkC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983.96946564885491" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="2516" height="1643"/>
+        <namedColor name="Flat Orange">
+            <color red="0.90196078431372551" green="0.49411764705882355" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E64C413D29DA4FFC00496AC8 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C413C29DA4FFC00496AC8 /* K.swift */; };
 		E680D71929D1242800EA61D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680D71829D1242800EA61D6 /* AppDelegate.swift */; };
 		E680D71B29D1242800EA61D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680D71A29D1242800EA61D6 /* SceneDelegate.swift */; };
-		E680D71D29D1242800EA61D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680D71C29D1242800EA61D6 /* ViewController.swift */; };
+		E680D71D29D1242800EA61D6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680D71C29D1242800EA61D6 /* WelcomeViewController.swift */; };
 		E680D72029D1242800EA61D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E680D71E29D1242800EA61D6 /* Main.storyboard */; };
 		E680D72229D1242D00EA61D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E680D72129D1242D00EA61D6 /* Assets.xcassets */; };
 		E680D72529D1242D00EA61D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E680D72329D1242D00EA61D6 /* LaunchScreen.storyboard */; };
+		E6D4166029D9FD470087F50D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4165F29D9FD470087F50D /* LoginViewController.swift */; };
+		E6D4166229D9FD550087F50D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4166129D9FD550087F50D /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E64C413C29DA4FFC00496AC8 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		E680D71529D1242800EA61D6 /* Betting-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Betting-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E680D71829D1242800EA61D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E680D71A29D1242800EA61D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E680D71C29D1242800EA61D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E680D71C29D1242800EA61D6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E680D71F29D1242800EA61D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E680D72129D1242D00EA61D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E680D72429D1242D00EA61D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E680D72629D1242D00EA61D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6D4165F29D9FD470087F50D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E6D4166129D9FD550087F50D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				E680D71829D1242800EA61D6 /* AppDelegate.swift */,
 				E680D71A29D1242800EA61D6 /* SceneDelegate.swift */,
-				E680D71C29D1242800EA61D6 /* ViewController.swift */,
-				E680D71E29D1242800EA61D6 /* Main.storyboard */,
+				E6D4165C29D9FCB80087F50D /* Model */,
+				E6D4165A29D9FC9A0087F50D /* Views */,
+				E6D4165B29D9FCA50087F50D /* Controllers */,
 				E680D72129D1242D00EA61D6 /* Assets.xcassets */,
 				E680D72329D1242D00EA61D6 /* LaunchScreen.storyboard */,
 				E680D72629D1242D00EA61D6 /* Info.plist */,
+				E64C413C29DA4FFC00496AC8 /* K.swift */,
 			);
 			path = "Betting-App";
+			sourceTree = "<group>";
+		};
+		E6D4165A29D9FC9A0087F50D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E680D71E29D1242800EA61D6 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6D4165B29D9FCA50087F50D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E680D71C29D1242800EA61D6 /* WelcomeViewController.swift */,
+				E6D4166129D9FD550087F50D /* RegisterViewController.swift */,
+				E6D4165F29D9FD470087F50D /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E6D4165C29D9FCB80087F50D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E680D71D29D1242800EA61D6 /* ViewController.swift in Sources */,
+				E6D4166029D9FD470087F50D /* LoginViewController.swift in Sources */,
+				E64C413D29DA4FFC00496AC8 /* K.swift in Sources */,
+				E6D4166229D9FD550087F50D /* RegisterViewController.swift in Sources */,
+				E680D71D29D1242800EA61D6 /* WelcomeViewController.swift in Sources */,
 				E680D71929D1242800EA61D6 /* AppDelegate.swift in Sources */,
 				E680D71B29D1242800EA61D6 /* SceneDelegate.swift in Sources */,
 			);
@@ -290,7 +326,8 @@
 				DEVELOPMENT_TEAM = 59DXMVY9R4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Betting-App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Betting App";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ok Bet";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "co.petariliev.Betting-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.petariliev.Ok-Bet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -323,7 +360,8 @@
 				DEVELOPMENT_TEAM = 59DXMVY9R4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Betting-App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Betting App";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ok Bet";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,7 +373,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "co.petariliev.Betting-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.petariliev.Ok-Bet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
