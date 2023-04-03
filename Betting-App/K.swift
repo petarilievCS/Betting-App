@@ -8,6 +8,11 @@
 import Foundation
 
 struct K {
+    
+    struct UI {
+        static let cornerRadius: CGFloat = 25.0
+    }
+    
     struct Segues {
         static let welcomeToLogin: String = "welcomeToLogin"
         static let welcomeToRegister: String = "welcomeToRegister"

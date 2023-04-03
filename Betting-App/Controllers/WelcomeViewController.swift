@@ -19,9 +19,9 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        customizeButton(loginButton)
-        customizeButton(registerButton)
-        customizeButton(guestButton)
+        Utilities.customizeButton(loginButton)
+        Utilities.customizeButton(registerButton)
+        Utilities.customizeButton(guestButton)
     }
     
     // MARK: - @IBActions
@@ -35,17 +35,5 @@ class WelcomeViewController: UIViewController {
     
     @IBAction func guestButtonPressed(_ sender: UIButton) {
         
-    }
-    
-    
-}
-
-
-// MARK: - Helper methods
-extension WelcomeViewController {
-    // Customizes button to improve design
-    func customizeButton(_ button: UIButton) {
-        button.layer.cornerRadius = 25.0
-        button.titleLabel?.font = .systemFont(ofSize: 25.0, weight: .bold)
     }
 }

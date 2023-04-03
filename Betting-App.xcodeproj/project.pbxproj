@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E64C413D29DA4FFC00496AC8 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C413C29DA4FFC00496AC8 /* K.swift */; };
+		E64C413F29DA548700496AC8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C413E29DA548700496AC8 /* Utilities.swift */; };
+		E64C414229DA618800496AC8 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C414129DA618800496AC8 /* PaddedTextField.swift */; };
 		E680D71929D1242800EA61D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680D71829D1242800EA61D6 /* AppDelegate.swift */; };
 		E680D71B29D1242800EA61D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680D71A29D1242800EA61D6 /* SceneDelegate.swift */; };
 		E680D71D29D1242800EA61D6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680D71C29D1242800EA61D6 /* WelcomeViewController.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		E64C413C29DA4FFC00496AC8 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		E64C413E29DA548700496AC8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E64C414129DA618800496AC8 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 		E680D71529D1242800EA61D6 /* Betting-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Betting-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E680D71829D1242800EA61D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E680D71A29D1242800EA61D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E64C414029DA617300496AC8 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				E64C414129DA618800496AC8 /* PaddedTextField.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
 		E680D70C29D1242800EA61D6 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +83,7 @@
 				E680D72329D1242D00EA61D6 /* LaunchScreen.storyboard */,
 				E680D72629D1242D00EA61D6 /* Info.plist */,
 				E64C413C29DA4FFC00496AC8 /* K.swift */,
+				E64C413E29DA548700496AC8 /* Utilities.swift */,
 			);
 			path = "Betting-App";
 			sourceTree = "<group>";
@@ -78,6 +91,7 @@
 		E6D4165A29D9FC9A0087F50D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E64C414029DA617300496AC8 /* UI Elements */,
 				E680D71E29D1242800EA61D6 /* Main.storyboard */,
 			);
 			path = Views;
@@ -173,6 +187,8 @@
 			files = (
 				E6D4166029D9FD470087F50D /* LoginViewController.swift in Sources */,
 				E64C413D29DA4FFC00496AC8 /* K.swift in Sources */,
+				E64C413F29DA548700496AC8 /* Utilities.swift in Sources */,
+				E64C414229DA618800496AC8 /* PaddedTextField.swift in Sources */,
 				E6D4166229D9FD550087F50D /* RegisterViewController.swift in Sources */,
 				E680D71D29D1242800EA61D6 /* WelcomeViewController.swift in Sources */,
 				E680D71929D1242800EA61D6 /* AppDelegate.swift in Sources */,
