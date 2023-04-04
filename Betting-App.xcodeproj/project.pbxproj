@@ -26,7 +26,7 @@
 		E680D72029D1242800EA61D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E680D71E29D1242800EA61D6 /* Main.storyboard */; };
 		E680D72229D1242D00EA61D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E680D72129D1242D00EA61D6 /* Assets.xcassets */; };
 		E680D72529D1242D00EA61D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E680D72329D1242D00EA61D6 /* LaunchScreen.storyboard */; };
-		E69956F529DB9956003CC00B /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69956F429DB9956003CC00B /* MainController.swift */; };
+		E69956F529DB9956003CC00B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69956F429DB9956003CC00B /* MainViewController.swift */; };
 		E6D4166029D9FD470087F50D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4165F29D9FD470087F50D /* LoginViewController.swift */; };
 		E6D4166229D9FD550087F50D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4166129D9FD550087F50D /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,7 @@
 		E680D72129D1242D00EA61D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E680D72429D1242D00EA61D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E680D72629D1242D00EA61D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E69956F429DB9956003CC00B /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		E69956F429DB9956003CC00B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E6D4165F29D9FD470087F50D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E6D4166129D9FD550087F50D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +127,7 @@
 				E6D4166129D9FD550087F50D /* RegisterViewController.swift */,
 				E6D4165F29D9FD470087F50D /* LoginViewController.swift */,
 				E64C414329DB114400496AC8 /* BirthdayController.swift */,
-				E69956F429DB9956003CC00B /* MainController.swift */,
+				E69956F429DB9956003CC00B /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 				E64C413D29DA4FFC00496AC8 /* K.swift in Sources */,
 				E64C413F29DA548700496AC8 /* Utilities.swift in Sources */,
 				E64C414229DA618800496AC8 /* PaddedTextField.swift in Sources */,
-				E69956F529DB9956003CC00B /* MainController.swift in Sources */,
+				E69956F529DB9956003CC00B /* MainViewController.swift in Sources */,
 				E6D4166229D9FD550087F50D /* RegisterViewController.swift in Sources */,
 				E64C414429DB114500496AC8 /* BirthdayController.swift in Sources */,
 				E680D71D29D1242800EA61D6 /* WelcomeViewController.swift in Sources */,

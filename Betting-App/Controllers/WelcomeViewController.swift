@@ -34,6 +34,6 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func guestButtonPressed(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: K.Segues.welcomeToMain, sender: self)
     }
 }

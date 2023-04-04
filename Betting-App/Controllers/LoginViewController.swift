@@ -46,6 +46,8 @@ extension LoginViewController {
                 self.passwordField.text = ""
                 self.passwordField.placeholder = "Invalid email or password"
                 print("Error while logging in user: \(String(describing: error))")
+            } else {
+                self.performSegue(withIdentifier: K.Segues.loginToMain, sender: self)
             }
         }
     }

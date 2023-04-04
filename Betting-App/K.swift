@@ -17,6 +17,9 @@ struct K {
         static let welcomeToLogin: String = "welcomeToLogin"
         static let welcomeToBirthday: String = "welcomeToBirthday"
         static let birthdayToRegister: String = "birthdayToRegister"
+        static let welcomeToMain: String = "welcomeToMain"
+        static let loginToMain: String = "loginToMain"
+        static let registerToMain: String = "registerToMain"
     }
 }
 

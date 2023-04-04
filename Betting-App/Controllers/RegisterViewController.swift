@@ -66,6 +66,8 @@ extension RegisterViewController {
         db.collection("users").addDocument(data: data) { error in
             if let error = error {
                 print("Error adding document: \(error)")
+            } else {
+                self.performSegue(withIdentifier: K.Segues.registerToMain, sender: self)
             }
         }
     }
