@@ -52,5 +52,26 @@ class MainViewController: UIViewController {
         Utilities.customizeBubble(betView)
     }
 
-
+    // MARK: - @IBActions
+    @IBAction func betButtonPressed(_ sender: UIButton) {
+        presentBet()
+    }
 }
+
+// MARK: - Presentation methods
+extension MainViewController {
+    // Presents the betting view controller
+    func presentBet() {
+        performSegue(withIdentifier: "mainToCyan", sender: self)
+    }
+    
+    // Prepares for segues
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Set the size of the bet VC to medium
+        let destinationVC: BetViewController = segue.destination as! BetViewController
+        if let sheet = destinationVC.sheetPresentationController {
+            sheet.detents = [.medium()]
+        }
+    }
+}
+

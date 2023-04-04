@@ -11,6 +11,7 @@ struct K {
     
     struct UI {
         static let cornerRadius: CGFloat = 25.0
+        static let viewCornerRadius: CGFloat = 10.0
     }
     
     struct Segues {
@@ -20,6 +21,7 @@ struct K {
         static let welcomeToMain: String = "welcomeToMain"
         static let loginToMain: String = "loginToMain"
         static let registerToMain: String = "registerToMain"
+        static let mainToBet: String = "mainToBet"
     }
 }
 

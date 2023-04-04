@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E6372BD629DC744400BDBE01 /* BettingChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6372BD529DC744400BDBE01 /* BettingChartView.swift */; };
+		E6372BD829DC8B7E00BDBE01 /* BetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6372BD729DC8B7E00BDBE01 /* BetViewController.swift */; };
 		E64C413D29DA4FFC00496AC8 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C413C29DA4FFC00496AC8 /* K.swift */; };
 		E64C413F29DA548700496AC8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C413E29DA548700496AC8 /* Utilities.swift */; };
 		E64C414229DA618800496AC8 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C414129DA618800496AC8 /* PaddedTextField.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		E6372BD529DC744400BDBE01 /* BettingChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingChartView.swift; sourceTree = "<group>"; };
+		E6372BD729DC8B7E00BDBE01 /* BetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetViewController.swift; sourceTree = "<group>"; };
 		E64C413C29DA4FFC00496AC8 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		E64C413E29DA548700496AC8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E64C414129DA618800496AC8 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				E6D4165F29D9FD470087F50D /* LoginViewController.swift */,
 				E64C414329DB114400496AC8 /* BirthdayController.swift */,
 				E69956F429DB9956003CC00B /* MainViewController.swift */,
+				E6372BD729DC8B7E00BDBE01 /* BetViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				E6D4166229D9FD550087F50D /* RegisterViewController.swift in Sources */,
 				E64C414429DB114500496AC8 /* BirthdayController.swift in Sources */,
 				E680D71D29D1242800EA61D6 /* WelcomeViewController.swift in Sources */,
+				E6372BD829DC8B7E00BDBE01 /* BetViewController.swift in Sources */,
 				E680D71929D1242800EA61D6 /* AppDelegate.swift in Sources */,
 				E680D71B29D1242800EA61D6 /* SceneDelegate.swift in Sources */,
 				E6372BD629DC744400BDBE01 /* BettingChartView.swift in Sources */,

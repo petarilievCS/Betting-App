@@ -16,11 +16,26 @@ class Utilities {
     }
     
     static func customizeView(_ view: UIView) {
-        view.layer.cornerRadius = 10.0
+        view.layer.cornerRadius = K.UI.viewCornerRadius
+        
     }
     
     static func customizeBubble(_ view: UIView) {
         view.layer.cornerRadius = K.UI.cornerRadius
+    }
+    
+    static func customizeViews(_ leftView: UIView, _ rightView: UIView) {
+        rightView.layer.cornerRadius = K.UI.viewCornerRadius
+        rightView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
+        leftView.layer.cornerRadius = K.UI.viewCornerRadius
+        leftView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
+    }
+    
+    static func customizeButtons(_ leftButton: UIButton, _ rightButton: UIButton) {
+        rightButton.layer.cornerRadius = K.UI.viewCornerRadius
+        rightButton.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
+        leftButton.layer.cornerRadius = K.UI.viewCornerRadius
+        leftButton.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
     }
     
 }
