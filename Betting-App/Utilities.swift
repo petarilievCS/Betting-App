@@ -15,4 +15,12 @@ class Utilities {
         button.titleLabel?.font = .systemFont(ofSize: 25.0, weight: .bold)
     }
     
+    static func customizeView(_ view: UIView) {
+        view.layer.cornerRadius = 10.0
+    }
+    
+    static func customizeBubble(_ view: UIView) {
+        view.layer.cornerRadius = K.UI.cornerRadius
+    }
+    
 }
